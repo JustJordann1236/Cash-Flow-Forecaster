@@ -1,0 +1,26 @@
+[
+  {
+    "id": "3abefc4f-a7ef-474e-bff1-eb8eeba98e19",
+    "label": "Rent",
+    "type": "expense",
+    "amount": 50,
+    "cycle": "monthly",
+    "startDate": "2026-08-16"
+  },
+  {
+    "id": "c729031f-c93e-42a8-b5d5-c3be558bf4c4",
+    "label": "Income",
+    "type": "income",
+    "amount": 3000,
+    "cycle": "monthly",
+    "startDate": "2026-08-16"
+  },
+  {
+    "id": "0bebd5ad-dab4-41fe-857a-884584953e58",
+    "label": "New PC",
+    "type": "expense",
+    "amount": 3000,
+    "cycle": "monthly",
+    "startDate": "2026-08-20"
+  }
+]

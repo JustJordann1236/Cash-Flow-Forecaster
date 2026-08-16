@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash-Flow Forecaster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Cash-Flow Forecaster</h1>
+      <p class="subtitle">See when your balance dips lowest, before it happens.</p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Add an item</h2>
+        <form id="item-form">
+          <div class="field">
+            <label for="label">Label</label>
+            <input type="text" id="label" required placeholder="e.g. Rent, Salary, Netflix" />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="type">Type</label>
+              <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="amount">Amount (RM)</label>
+              <input type="number" id="amount" required min="0.01" step="0.01" placeholder="0.00" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="cycle">Repeats</label>
+              <select id="cycle">
+                <option value="one-off">One-off</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly" selected>Monthly</option>
+                <option value="annual">Annual</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="startDate">Start date</label>
+              <input type="date" id="startDate" required />
+            </div>
+          </div>
+
+          <button type="submit">Add item</button>
+        </form>
+
+        <h2>Your items</h2>
+        <ul id="item-list" class="item-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Forecast</h2>
+        <div class="field-row">
+          <div class="field">
+            <label for="startingBalance">Starting balance (RM)</label>
+            <input type="number" id="startingBalance" value="1000" step="0.01" />
+          </div>
+          <div class="field">
+            <label for="forecastDays">Days to forecast</label>
+            <input type="number" id="forecastDays" value="30" min="1" max="366" />
+          </div>
+        </div>
+
+        <div id="lowest-callout" class="lowest-callout"></div>
+
+        <div id="forecast-chart" class="forecast-chart"></div>
+        <div id="forecast-table-wrap">
+          <table id="forecast-table" class="forecast-table">
+            <thead>
+              <tr><th>Date</th><th>Events</th><th>Balance (RM)</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

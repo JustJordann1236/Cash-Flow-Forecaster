@@ -35,7 +35,7 @@ export async function routes(app: FastifyInstance) {
         if (!parsed.success) {
             return reply.status(400).send({ error: parsed.error.flatten() });
         }
-        const { startingDate, months } = parsed.data;
+        const { startingBalance, startDate, days } = parsed.data;
         const items = await getItems();
         const result = buildForecast(items, startingBalance, startDate ?? todayISO(), days ?? 30);
         return result;
