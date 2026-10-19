@@ -7,7 +7,7 @@ import { routes } from "./routes.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const app = Fastify({ logger: true });
+const app = Fastify({ logger: false });
 
 await app.register(cors, { origin: true });
 

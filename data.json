@@ -1,26 +1,42 @@
 [
   {
-    "id": "3abefc4f-a7ef-474e-bff1-eb8eeba98e19",
-    "label": "Rent",
+    "id": "df20283a-63e2-4a95-a0e7-0bae5ec55cef",
+    "label": "Netflix",
     "type": "expense",
     "amount": 50,
     "cycle": "monthly",
-    "startDate": "2026-08-16"
+    "startDate": "2026-10-20"
   },
   {
-    "id": "c729031f-c93e-42a8-b5d5-c3be558bf4c4",
-    "label": "Income",
-    "type": "income",
-    "amount": 3000,
-    "cycle": "monthly",
-    "startDate": "2026-08-16"
-  },
-  {
-    "id": "0bebd5ad-dab4-41fe-857a-884584953e58",
-    "label": "New PC",
+    "id": "4da43d3e-8f5e-43ad-b3a1-6123bba3da6d",
+    "label": "Rent",
     "type": "expense",
-    "amount": 3000,
+    "amount": 300,
     "cycle": "monthly",
-    "startDate": "2026-08-20"
+    "startDate": "2026-10-25"
+  },
+  {
+    "id": "df72cb84-14e9-47e2-ae18-6988a2ecdc80",
+    "label": "Netflix",
+    "type": "expense",
+    "amount": 50,
+    "cycle": "monthly",
+    "startDate": "2026-10-30"
+  },
+  {
+    "id": "4e299f29-f2b9-42c1-b481-733d145e423c",
+    "label": "Salary",
+    "type": "income",
+    "amount": 2500,
+    "cycle": "monthly",
+    "startDate": "2026-10-30"
+  },
+  {
+    "id": "a1f053a5-734c-4be0-a1e2-c3233dad12ec",
+    "label": "Gas",
+    "type": "expense",
+    "amount": 50,
+    "cycle": "weekly",
+    "startDate": "2026-10-19"
   }
 ]

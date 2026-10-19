@@ -61,8 +61,8 @@ export function generateOccurences (
         
         if (candiate >= windowStart) {
             occurences.push(candiate);
-            n++;
         }
+        n++;
     }
     return occurences;
 }
